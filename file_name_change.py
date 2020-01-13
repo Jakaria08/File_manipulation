@@ -12,7 +12,7 @@ for img_file in glob.glob(image_path + '/*.png'):
     resize_image = cv2.resize(img, (256,256), interpolation=cv2.INTER_CUBIC)
 
     new_name = os.path.join(dir_name, str(count).zfill(4) + "x4.png")
-    cv.imwrite(new_name, resize_image)
+    cv2.imwrite(new_name, resize_image)
 
     count += 1
     if count%100 == 0:
