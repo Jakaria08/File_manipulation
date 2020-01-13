@@ -1,7 +1,7 @@
 import os
 import glob
 
-image_path = "/home/jakaria/Super_Resolution/CinCGAN-pytorch/datasets/SPOT-6-BING/DIV2K/DIV2K_valid_HR"
+image_path = "/home/jakaria/Super_Resolution/CinCGAN-pytorch/datasets/SPOT-6-BING/DIV2K/DIV2K_valid_LR_mild"
 count = 801
 
 for img_file in glob.glob(image_path + '/*.png'):
