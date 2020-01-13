@@ -5,7 +5,8 @@ image_path = "/home/jakaria/Super_Resolution/CinCGAN-pytorch/datasets/SPOT-6-BIN
 count = 1
 
 for img_file in glob.glob(image_path + '/*.png'):
-    new_name = str(count).zfill(4) + ".png"
+    dir_name = os.path.dir_name(img_file)
+    new_name = os.path.join(dir_name, str(count).zfill(4) + ".png")
     print(new_name)
     print(img_file)
     count += 1
