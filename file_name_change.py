@@ -7,6 +7,7 @@ count = 1
 for img_file in glob.glob(image_path + '/*.png'):
     new_name = str(count).zfill(4) + ".png"
     print(new_name)
+    print(img_file)
     count += 1
     if count%100 == 0:
         print(count)
